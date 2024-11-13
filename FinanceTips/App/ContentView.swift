@@ -9,11 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        NavigationBar() //Adicionar funcionalidade de perfis
+        FeaturesGrid()
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
         }
         .padding()
     }
