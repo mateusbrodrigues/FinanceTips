@@ -14,7 +14,7 @@ struct FeatureType: View {
             Image(service.imagem).resizable().scaledToFit()
                 .cornerRadius(20).fixedSize(horizontal: false, vertical: true)
             Text(service.nome)
-        }.frame(width: 80,height: 80)
+        }.frame(width: 100,height: 100)
     }
 }
 

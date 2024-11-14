@@ -44,7 +44,7 @@ struct NavigationBar: View {
                        }
                    }
                } label: {
-                   Text(viewModel.currentUser?.name ?? "Select User")
+                   Text(viewModel.currentUser?.name ?? "Selecionar Perfil")
                        .font(.headline)
                        .fontWeight(.bold)
                }
@@ -56,13 +56,13 @@ struct NavigationBar: View {
                        .font(.title3)
                        .foregroundStyle(.gray)
                }
-               .alert("Add New User", isPresented: $showAddUserAlert) {
-                   TextField("Enter user name", text: $newUserName)
-                   Button("Add") {
+               .alert("Novo perfil", isPresented: $showAddUserAlert) {
+                   TextField("Digite o nome", text: $newUserName)
+                   Button("Adicionar") {
                        viewModel.addUser(name: newUserName)
                        newUserName = ""
                    }
-                   Button("Cancel", role: .cancel) { }
+                   Button("Cancelar", role: .cancel) { }
                }
            }
        }

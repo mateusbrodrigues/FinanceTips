@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView([.horizontal, .vertical]) {
-            NavigationBar()
-            FeaturesGrid()
             VStack {
-                
+                NavigationBar()
+                FeaturesGrid()
+                CarouselTabView()
+                GoalContainer()
             }
             .padding()
-        } }
+        }
 }
 
 #Preview {
