@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct UserProfile {
+    var name: String
+}
+
+var usersMock: [UserProfile] = [
+    UserProfile(name: "Mateus Rodrigues"),
+    UserProfile(name: "Bianca Souza"),
+    UserProfile(name: "Fabricio Moraes"),
+]
+
 let servicesMock : [ServiceType]=[
     ServiceType(id: 1, nome: "Invista", imagem: "investimento"),
     ServiceType(id: 2, nome: "Defina metas", imagem: "metas"),
