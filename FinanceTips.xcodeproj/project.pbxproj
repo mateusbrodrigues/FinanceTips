@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9F3007792CF209FF00C43BE7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F3007782CF209FF00C43BE7 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		271AC84B2CE4E2980008C675 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3007792CF209FF00C43BE7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = FinanceTips;
 			packageProductDependencies = (
+				9F3007782CF209FF00C43BE7 /* Alamofire */,
 			);
 			productName = FinanceTips;
 			productReference = 271AC83A2CE4E2970008C675 /* FinanceTips.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 271AC8312CE4E2970008C675;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9F3007772CF209FF00C43BE7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 271AC83B2CE4E2970008C675 /* Products */;
 			projectDirPath = "";
@@ -552,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F3007772CF209FF00C43BE7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F3007782CF209FF00C43BE7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F3007772CF209FF00C43BE7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 271AC8322CE4E2970008C675 /* Project object */;
 }

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct GoalContainer: View {
+    var goals: [GoalType]
     var body: some View {
         ScrollView(.vertical){
             VStack(alignment: .leading, spacing: 30){
-                ForEach(goalMock){
+                ForEach(goals){
                     goal in GoalListView(goal: goal)
                 }
             }
@@ -21,5 +22,5 @@ struct GoalContainer: View {
 }
 
 #Preview {
-    GoalContainer()
+    GoalContainer(goals: goalMock)
 }

@@ -26,6 +26,10 @@ let servicesMock : [ServiceType]=[
 let goalMock: [GoalType] = [
     GoalType(id: 1, icone: "book.fill", titulo: "Educação Financeira", descricao: "Estudar meia hora hora por dia"),
     GoalType(id: 2, icone: "dollarsign.circle.fill", titulo: "Metas", descricao: "Defina suas metas financeiras do mês"),
-    GoalType(id: 3, icone: "calendar", titulo: "Orçamento mensal", descricao: "Crie seu orçamento do mês")
+    GoalType(id: 3, icone: "calendar", titulo: "Orçamento mensal", descricao: "Crie seu orçamento do mês"),
+    GoalType(id: 4, icone: "lightbulb.slash.fill", titulo: "Economia", descricao: "Faça economias"),
+    GoalType(id: 5, icone: "chart.pie.fill", titulo: "Estatísticas financeiras", descricao: "Crie indicadores"),
+    GoalType(id: 6, icone: "dollarsign.square", titulo: "Reserva", descricao: "Reserve 10% de sua renda mensal"),
+
 ]
 
