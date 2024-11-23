@@ -13,7 +13,7 @@ struct FeaturesGrid: View {
     }
                      
     var body: some View {
-        ScrollView(.horizontal){
+        ScrollView(.horizontal,showsIndicators: false){
             LazyHGrid(rows: gridLayout){
                 ForEach(servicesMock) {
                     service in FeatureType(service: service)}

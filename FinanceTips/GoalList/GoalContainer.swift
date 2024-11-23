@@ -10,7 +10,7 @@ import SwiftUI
 struct GoalContainer: View {
     var goals: [GoalType]
     var body: some View {
-        ScrollView(.vertical){
+        ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .leading, spacing: 30){
                 ForEach(goals){
                     goal in GoalListView(goal: goal)
